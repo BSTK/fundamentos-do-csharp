@@ -7,7 +7,6 @@ namespace Calculadora
     {
         public static void Main()
         {
-
             Console.Clear();
             Terminal.TextoCentralizadoNovaLinha("-----------------");
             Terminal.TextoCentralizadoNovaLinha("** Calculadora **");
@@ -21,7 +20,7 @@ namespace Calculadora
 
             float resultado = primeiroNumero + segundoNumero;
 
-            Console.WriteLine();
+            Terminal.TextoCentralizado();
             Terminal.TextoCentralizadoNovaLinha(
                 $"Soma de { primeiroNumero } + { segundoNumero } = { resultado }"
             );

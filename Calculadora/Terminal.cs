@@ -6,13 +6,13 @@ namespace Calculadora
     {
         private static readonly int WINDOW_WIDTH_TEXTO_CENTRALIZADO = Console.WindowWidth / 2;
 
-        public static void TextoCentralizado(string texto)
+        public static void TextoCentralizado(string texto = "")
         {
             var margemEsquerda = MargemEsquerda(texto);
             Console.Write(texto.PadLeft(margemEsquerda));
         }
 
-        public static void TextoCentralizadoNovaLinha(string texto)
+        public static void TextoCentralizadoNovaLinha(string texto = "")
         {
             var margemEsquerda = MargemEsquerda(texto);
             Console.WriteLine(texto.PadLeft(margemEsquerda));
